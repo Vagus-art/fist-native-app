@@ -1,19 +1,30 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import HomeScreen from './HomeScreen';
+import DetailsScreen from './DetailsScreen';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-export default function App() {
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
+  },
+  Details: {
+    screen: DetailsScreen,
+  },
+},
+{
+  initialRouteName: 'Home',
+}
+);
+
+const AppContainer = createAppContainer(AppNavigator);
+
+export default function App () {
   return (
-    <View style={styles.container}>
-      <Text>Permiso dijo el petiso</Text>
+    <View style={{ flex: 1, justifyContent: 'center' }}>
+      <AppContainer />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
