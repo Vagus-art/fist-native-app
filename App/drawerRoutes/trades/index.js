@@ -1,4 +1,3 @@
-import React from "react";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 import Purchases from "./purchases/";
 import Sales from "./sales/";
@@ -6,7 +5,7 @@ import Sales from "./sales/";
 export default createBottomTabNavigator(
   {
     Sales,
-    Purchases
+    Purchases,
   },
   {
     tabBarOptions: {

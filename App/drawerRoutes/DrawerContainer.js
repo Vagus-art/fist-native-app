@@ -1,17 +1,16 @@
-import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import Trades from "./trades/";
 import Clients from "./clients/";
 import Providers from "./providers/";
+import Stock from "./stock/";
+import Balance from "./balance/";
+
 
 const DrawerNavigator = createDrawerNavigator({
-    Trades,Clients,Providers
+    Trades,Stock,Clients,Providers,Balance
   }, {
-    initialRouteName: 'Trades',
-    contentOptions: {  
-      activeTintColor: '#e91e63',
-    },
+    initialRouteName: 'Trades'
   });
   
 export default createAppContainer(DrawerNavigator)

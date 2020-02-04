@@ -1,12 +1,12 @@
 import { createStackNavigator } from "react-navigation-stack";
-import Providers from "./Providers";
+import Balance from "./Balance";
 import { withNavigation } from "../methods";
 
 export default createStackNavigator(
   {
-    Providers: withNavigation(Providers)
+    Balance: withNavigation(Balance)
   },
   {
-    initialRouteName: "Providers"
+    initialRouteName: "Balance"
   }
 );

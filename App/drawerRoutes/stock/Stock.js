@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default Sales = props => {
+export default Stock = props => {
   return (
     <View>
-      <Text>Ventas</Text>
+      <Text>Stock</Text>
     </View>
   );
 };
