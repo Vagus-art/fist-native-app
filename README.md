@@ -1,5 +1,7 @@
 # fist-native-app
 First React Native App
 ## todo
- - use stacknavigation inside tab navigators in "trades"
- - use stacknavigation inside drawer items (clients and providers)
+ - modification and add page for clients and providers
+ - stock list item template
+ - trades list item template
+ - balance section
