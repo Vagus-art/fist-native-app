@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import { ListItem } from "react-native-elements";
 
-export default ClientTemplate = props => {
+export default PersonTemplate = props => {
   return (
     <ListItem
       title={props.name}
