@@ -4,7 +4,12 @@ import { withNavigation } from "../methods";
 
 export default createStackNavigator(
   {
-    Stock: withNavigation(Stock)
+    Stock: {
+      screen:withNavigation(Stock),
+      navigationOptions: {
+        title: "Inventario"
+      }
+    }
   },
   {
     initialRouteName: "Stock"

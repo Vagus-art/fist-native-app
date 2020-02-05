@@ -4,7 +4,12 @@ import { withNavigation } from "../methods";
 
 export default createStackNavigator(
   {
-    Balance: withNavigation(Balance)
+    Balance: {
+      screen:withNavigation(Balance),
+      navigationOptions: {
+        title: "Balance"
+      }
+    }
   },
   {
     initialRouteName: "Balance"

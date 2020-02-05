@@ -4,7 +4,12 @@ import { withNavigation } from "../methods";
 
 export default createStackNavigator(
   {
-    Providers: withNavigation(Providers)
+    Providers: {
+      screen:withNavigation(Providers),
+      navigationOptions: {
+        title: "Proveedores"
+      }
+    }
   },
   {
     initialRouteName: "Providers"

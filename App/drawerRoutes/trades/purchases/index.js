@@ -4,7 +4,12 @@ import { withNavigation } from "../../methods";
 
 export default createStackNavigator(
   {
-    Purchases: withNavigation(Purchases)
+    Purchases: {
+      screen: withNavigation(Purchases),
+      navigationOptions: {
+        title: "Compras"
+      }
+    }
   },
   {
     initialRouteName: "Purchases"
