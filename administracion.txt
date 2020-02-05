@@ -1,0 +1,72 @@
+-----
+CLIENTES
+-crear
+-obtener
+-modificar
+-borrar
+-saldar deuda (suma a balance)
+{
+id,
+nombre,
+telefono,
+direccion,
+historial de compras,
+deuda
+}
+-----
+PROVEEDORES
+-crear
+-obtener
+-modificar
+-borrar
+{
+id,
+nombre,
+telefono,
+direccion,
+historial de ventas
+}
+-----
+STOCK
+-agregar
+-modificar
+-obtener
+-borrar
+{
+id,
+nombre,
+precio,
+cantidad
+}
+-----
+VENTAS
+-agregar
+-modificar
+-obtener
+-borrar
+-resta a stock
+-suma a balance
+{
+cantidad de producto,
+nombre de productos (id),
+nombre de cliente (id),
+agregar a historial de cliente,
+agregar a historial de ventas,
+precio
+}
+-----
+COMPRAS
+-suma a stock
+-resta a balance
+{
+cantidad de producto,
+nombre de productos (id),
+nombre de proveedor (id),
+agregar a historial de proovedor,
+agregar a historial de compras,
+precio
+}
+-----
+BALANCE
+-modificar
+-----
