@@ -1,10 +1,18 @@
 import React from "react";
-import { View } from "react-native";
+import { View, StyleSheet } from "react-native";
 import PersonTemplate from "../PersonTemplate";
+import ActionButton from "../ActionButton";
+
+const styles = StyleSheet.create({
+  MainContainer: {
+    flex: 1,
+  }
+});
 
 export default Clients = props => {
   return (
-    <View>
+    <View style={styles.MainContainer}>
+      <ActionButton touch={() => alert("Add client")} />
       <PersonTemplate
         name="Pizzeria"
         phone="2262154568"
