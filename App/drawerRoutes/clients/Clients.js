@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import PersonTemplate from "../PersonTemplate";
-import ActionButton from "../ActionButton";
+import PersonTemplate from "../templates/PersonTemplate";
+import ActionButton from "../interfaceItems/ActionButton";
 
 const styles = StyleSheet.create({
   MainContainer: {

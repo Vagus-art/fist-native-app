@@ -1,11 +1,20 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { Icon } from "react-native-elements";
+import { View, Text, StyleSheet } from "react-native";
+import ActionButton from "../../interfaceItems/ActionButton";
+import TradeTemplate from "../../templates/TradeTemplate";
 
-export default  Sales = props => {
+
+const styles = StyleSheet.create({
+  MainContainer: {
+    flex: 1
+  }
+});
+
+export default Sales = props => {
   return (
-    <View>
-      <Text>Ventas</Text>
+    <View style={styles.MainContainer}>
+      <ActionButton touch={() => alert("Add sale")} />
+      <TradeTemplate person="Pizzeria" sum="160" item="2 Maní 1kg" />
     </View>
   );
 };
