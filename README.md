@@ -4,6 +4,7 @@ First React Native App
  - modification and add page for clients, providers, stock, and trades
  - balance section
  - stock is divided in categories, so in export it translates better to price sheets
+ - implement firebase actions, being done in rn-firebase repo
 
  ### dreams?
  - notifications when user doesn't update stock prices.
